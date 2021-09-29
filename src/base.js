@@ -4,7 +4,7 @@ import "firebase/storage";
 
 //dibagian ini ya temen2 di ganti settingannya kalian, ada satu lagi di firebasenya bagian file firebase.json sama dengan firebase storage rules
 const firebaseConfig = {
-  apiKey: "AIzaSyCgldcIJ3QOlAniQ0zMmHEj7PbNCqMWBo0",
+  apiKey: "",
   authDomain: "upload-file-306ad.firebaseapp.com",
   projectId: "upload-file-306ad",
   storageBucket: "upload-file-306ad.appspot.com",
