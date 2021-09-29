@@ -1,4 +1,3 @@
-// pastikan di bagian firebase storage rulesnya gini 
 {
   "storage": {
     "rules": "storage.rules"

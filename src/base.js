@@ -2,7 +2,7 @@ import * as firebase from "firebase/app";
 import "firebase/storage";
 
 
-//dibagian ini ya temen2 di ganti settingannya kalian, ada satu lagi di firebasenya yang kudu di ganti
+//dibagian ini ya temen2 di ganti settingannya kalian, ada satu lagi di firebasenya bagian file firebase.json sama dengan firebase storage rules
 const firebaseConfig = {
   apiKey: "AIzaSyCgldcIJ3QOlAniQ0zMmHEj7PbNCqMWBo0",
   authDomain: "upload-file-306ad.firebaseapp.com",
