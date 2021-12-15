@@ -1,19 +1,13 @@
-import React from 'react';
-import './App.css';
-import {app} from './base'
+import logo from "./logo.svg";
+import "./App.css";
+import Example from "./Example";
 
 function App() {
-  const onChange = (e) => {
-    const file = e.target.files[0];
-    const storageRef = app.storage().ref()
-    const fileRef = storageRef.child(file.name)
-    fileRef.put(file).then(() => {
-      console.log("Uploaded a file")
-    })
-  }
-
   return (
-    <input type="file" onChange={onChange}/>
+    <div className="app">
+      <Example />
+      <h1 className="text-3xl font-bold underline">Hello world!</h1>;
+    </div>
   );
 }
 
