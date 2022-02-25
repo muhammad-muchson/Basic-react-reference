@@ -12,6 +12,7 @@ import {
   Navigate,
   useNavigate,
 } from "react-router-dom";
+import Cookies from "universal-cookie";
 
 const GetTodo = gql`
   query MyQuery {
@@ -40,6 +41,8 @@ const GetTodoListByUserId = gql`
 `;
 
 export default function Login() {
+  const cookies = new Cookies();
+
   const [name, setName] = useState("");
   const [password, setPassword] = useState("");
   // const { data, loading, error } = useQuery(GetTodo);
@@ -48,6 +51,7 @@ export default function Login() {
   useEffect(() => {
     if (data?.auth.length === 1) {
       console.log("data", data);
+      cookies.set("auth", true, { path: "/" });
       return navigate("/home");
     }
   }, [data]);
