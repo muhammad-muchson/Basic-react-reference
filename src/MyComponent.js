@@ -1,7 +1,7 @@
 import ReactQuill from "react-quill";
 import "react-quill/dist/quill.snow.css";
 import React from "react";
-import renderHTML from "react-render-html";
+import htmr from "htmr";
 
 export default class MyComponent extends React.Component {
   constructor(props) {
@@ -20,7 +20,7 @@ export default class MyComponent extends React.Component {
       <>
         <ReactQuill value={this.state.text} onChange={this.handleChange} />
         {this.state.text}
-        {/* {renderHTML(this.state.text)} */}
+        {htmr(this.state.text)}
       </>
     );
   }
